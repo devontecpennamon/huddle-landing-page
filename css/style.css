@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
+/******************************************
+/* CSS
+/*******************************************/
+:root {
+  --heading-font: 'Poppins', sans-serif;
+  --body-font: 'Open Sans', sans-serif;
+
+  --color-pink: hsl(322, 100%, 66%);
+  --color-pale-cyan: hsl(193, 100%, 96%);
+  --color-dark-cyan: hsl(192, 100%, 9%);
+  --color-gray-blue: hsl(208, 11%, 55%);
+}
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--body-font);
+}
+
+h1,
+h2 {
+  font-family: var(--heading-font);
+}
+
+button {
+  border: none;
+  border-radius: 20px;
+  padding: 0.8rem 4rem;
+  font-weight: bold;
+}
+
+.container {
+  padding: 2rem 4rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.hero {
+  background-image: url('../images/bg-hero-desktop.svg');
+  background-color: var(--color-pale-cyan);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 721px;
+  align-items: center;
+}
+
+.hero-header {
+  justify-content: space-between;
+}
+
+.hero-header img {
+  max-height: 30px;
+}
+
+.hero-header button {
+  background-color: white;
+  box-shadow: 2px 2px 10px lightgray;
+}
+
+.hero-content {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-text {
+  max-width: 536px;
+}
+
+.hero-text h1 {
+  font-size: 3em;
+  line-height: 4.5rem;
+}
+
+.hero-text p {
+  font-size: 1.1em;
+}
+
+.hero-text button {
+  color: white;
+  background-color: var(--color-pink);
+  box-shadow: 2px 2px 5px var(--color-pink);
+}
+
+.hero-image {
+  max-width: 680px;
+  height: auto;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.main-info {
+  box-shadow: 2px 2px 10px lightgray;
+  display: flex;
+  margin: 3rem;
+}
+
+.main-info-image img {
+  padding: 2rem;
+}
+
+.main-info img {
+  max-width: 440px;
+  height: auto;
+}
+
+footer {
+  background-color: var(--color-dark-cyan);
+  color: white;
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/ ;
