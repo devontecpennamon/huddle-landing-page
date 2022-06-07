@@ -227,12 +227,14 @@ footer {
 
 .footer-left {
   align-items: baseline;
+  line-height: 1.5rem;
 }
 
 .footer-left img {
   width: 20px;
   height: 20px;
   margin-right: 1rem;
+  
 }
 
 .footer-middle {
@@ -340,8 +342,34 @@ footer {
     padding: 0;
   }
 
+  footer {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+
+  }
+
+  .footer-middle a {
+    padding: 0;
+    margin: .8rem 0;
+  }
+
+  .footer-right div {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-right div * {
+    margin: .7rem .5rem;
+  }
+
   .footer-content,
-   .footer-middle {
+  .footer-middle {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .attribution {
+    transform: none;
+    width: 100%;
   }
 }
