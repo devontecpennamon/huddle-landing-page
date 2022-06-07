@@ -221,7 +221,7 @@ footer {
 
 .footer-content {
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 5rem;
+  column-gap: .5fr;
   margin: 1rem 0;
 }
 
