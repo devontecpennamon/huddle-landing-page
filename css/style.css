@@ -243,6 +243,9 @@ footer {
 .attribution {
   width: 30%;
   margin: auto;
+  font-size: 0.7rem;
+  transform: translate(0px, 50px);
+  text-align: center;
 }
 .attribution a {
   color: white;
