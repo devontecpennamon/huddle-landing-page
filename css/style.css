@@ -25,21 +25,25 @@ h2 {
   font-family: var(--heading-font);
 }
 
+/* basic button styles */
 button {
   border: none;
-  border-radius: 20px;
+  border-radius: 30px;
   padding: 0.8rem 4rem;
   font-weight: bold;
 }
 
 .container {
-  padding: 2rem 4rem;
+  padding: 2rem 0rem;
+  max-width: 1242px;
+  margin: auto;
 }
 
 .flex {
   display: flex;
 }
 
+/* hero styles start */
 .hero {
   background-image: url('../images/bg-hero-desktop.svg');
   background-color: var(--color-pale-cyan);
@@ -70,10 +74,12 @@ button {
 
 .hero-text {
   max-width: 536px;
+
+  transform: translate(0px, -40px);
 }
 
 .hero-text h1 {
-  font-size: 3em;
+  font-size: 2.5em;
   line-height: 4.5rem;
 }
 
@@ -85,6 +91,7 @@ button {
   color: white;
   background-color: var(--color-pink);
   box-shadow: 2px 2px 5px var(--color-pink);
+  transform: translate(0px, 30px);
 }
 
 .hero-image {
@@ -96,15 +103,24 @@ button {
   max-width: 100%;
   height: auto;
 }
+/* hero styles end */
+
+/* main styles start */
 
 .main-info {
+  border-radius: 20px;
   box-shadow: 2px 2px 10px lightgray;
   display: flex;
-  margin: 3rem;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 3rem 3rem 5rem;
+  max-width: 1242px;
+  margin: auto;
+  margin: 2rem auto;
 }
 
-.main-info-image img {
-  padding: 2rem;
+.main-info-image_order {
+  order: 99;
 }
 
 .main-info img {
@@ -112,14 +128,56 @@ button {
   height: auto;
 }
 
+.main-info-text {
+  max-width: 499px;
+}
+
+.main-info-text h2 {
+  font-size: 1.9rem;
+}
+
+.main-info-text p {
+  font-size: 1.1rem;
+}
+
+.hover-thing {
+  box-shadow: 2px 2px 10px lightgray;
+  background-color: white;
+  border-radius: 20px;
+  margin: auto;
+  padding: 2rem;
+  max-width: 800px;
+  flex-direction: column;
+  align-items: center;
+
+  z-index: 1;
+  transform: translate(0px, 50px);
+}
+
+.hover-thing h2 {
+  padding-top: 1rem;
+  font-size: 2rem;
+}
+
+.hover-thing button {
+  color: white;
+  background-color: var(--color-pink);
+  box-shadow: 2px 2px 5px var(--color-pink);
+  width: 400px;
+  padding-top: 1.3rem;
+  padding-bottom: 1.3rem;
+  font-size: 1.3rem;
+}
+
+.hover-thing * {
+  margin: 1.5rem;
+}
+/* main styles end */
+
+/* footer styles start */
 footer {
+  padding: 4rem 4rem;
   background-color: var(--color-dark-cyan);
   color: white;
 }
-/******************************************
-/* LAYOUT
-/*******************************************/
-
-/******************************************
-/* ADDITIONAL STYLES
-/*******************************************/ ;
+/* footer styles end */
